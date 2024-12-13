@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Holberton letter particles</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./behaviors.js" defer></script>
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Text input -->
+    <input id="text-input" type="text" value="Holberton School">
+
+    <!-- Github link -->
+    <a id="github-social-link" href="https://github.com/fchavonet/web-holberton_letter_particles" target="_blank">
+        <img src="./assets/images/social_icon-github.webp" alt="GitHub social icon">
+    </a>
+
+    <!-- Settings menu-->
+    <div id="settings-menu">
+        <h2>Settings</h2>
+
+        <hr>
+
+        <!-- Color picker -->
+        <label for="color-picker">
+            <div>
+                <i class="bi bi-paint-bucket"></i> Color
+            </div>
+        </label>
+
+        <select id="color-picker">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+
+        <!-- Font size -->
+        <label for="font-size">
+            <div>
+                <i class="bi bi-file-font"></i> Font size:
+            </div>
+
+            <span id="font-size-value">150</span>
+        </label>
+
+        <input id="font-size" type="range" min="100" max="200" step="10" value="150" list="font-size-ticks">
+        <datalist id="font-size-ticks">
+            <option value="100"></option>
+            <option value="110"></option>
+            <option value="120"></option>
+            <option value="130"></option>
+            <option value="140"></option>
+            <option value="150"></option>
+            <option value="160"></option>
+            <option value="170"></option>
+            <option value="180"></option>
+            <option value="190"></option>
+            <option value="200"></option>
+        </datalist>
+
+        <!-- Particle size -->
+        <label for="particle-size">
+            <div>
+                <i class="bi bi-exclude"></i> Particle size:
+            </div>
+
+            <span id="particle-size-value">6</span>
+        </label>
+
+        <input id="particle-size" type="range" min="3" max="9" step="1" value="6" list="particle-size-ticks">
+        <datalist id="particle-size-ticks">
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+        </datalist>
+
+        <!-- Gap size -->
+        <label for="gap-size">
+            <div>
+                <i class="bi bi-grid-3x3-gap-fill"></i> Gap size:
+            </div>
+
+            <span id="gap-size-value">3</span>
+        </label>
+
+        <input id="gap-size" type="range" min="0" max="6" step="1" value="3" list="gap-size-ticks">
+        <datalist id="gap-size-ticks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+        </datalist>
+    </div>
+
+    <!-- Main canvas -->
+    <canvas id="main-canvas"></canvas>
+</body>
+
+</html>
