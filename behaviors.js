@@ -103,6 +103,7 @@ window.addEventListener("load", function () {
             this.fontSizeSlider = document.getElementById("font-size");
             this.particleSizeSlider = document.getElementById("particle-size");
             this.gapSizeSlider = document.getElementById("gap-size");
+            this.mouseRadiusSlider = document.getElementById("mouse-radius");
 
             // Maintain `this` context for event listeners.
             const self = this;
@@ -151,6 +152,12 @@ window.addEventListener("load", function () {
             if (this.gapSizeSlider) {
                 this.gapSizeSlider.addEventListener("input", function () {
                     self.updateGapSize();
+                });
+            }
+
+            if (this.mouseRadiusSlider) {
+                this.mouseRadiusSlider.addEventListener("input", function () {
+                    self.updateMouseRadius();
                 });
             }
         }
@@ -213,6 +220,15 @@ window.addEventListener("load", function () {
             }
 
             this.wrapText(textValue);
+        }
+
+        // Update mouse radius.
+        updateMouseRadius() {
+            if (!this.mouseRadiusSlider) {
+                return;
+            }
+
+            this.mouse.radius = parseInt(this.mouseRadiusSlider.value, 10);
         }
 
         // Render text on canvas and create particles.
@@ -345,7 +361,7 @@ window.addEventListener("load", function () {
         textEffect.render();
         requestAnimationFrame(animate);
     }
-    
+
     animate();
 
     // Resize canvas to match window dimensions on resize.
