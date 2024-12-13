@@ -85,14 +85,14 @@ window.addEventListener("load", function () {
             // Text rendering properties.
             this.textX = canvasWidth / 2;
             this.textY = canvasHeight / 2;
-            this.fontSize = 150;
+            this.fontSize = 200;
             this.lineHeight = this.fontSize * 0.8;
             this.maxTextWidth = canvasWidth * 0.8;
 
             // Particle properties.
             this.particles = [];
-            this.particleSize = 6;
-            this.gapSize = 3;
+            this.particleSize = 3;
+            this.gapSize = 1;
 
             // Mouse interaction properties.
             this.mouse = { radius: 50000, x: 0, y: 0 };
@@ -255,8 +255,42 @@ window.addEventListener("load", function () {
                 case "blue":
                     gradient = "#0000ff";
                     break;
+                case "white":
+                    gradient = "#ffffff";
+                    break;
+                case "holberton":
+                    gradient = this.context.createLinearGradient(0, 0, this.canvasWidth, this.canvasHeight);
+                    gradient.addColorStop(0.3, "#cf2c41");
+                    gradient.addColorStop(0.5, "#ea3af2");
+                    gradient.addColorStop(0.7, "#ffff00");
+                    break;
+                case "desert":
+                    gradient = this.context.createLinearGradient(0, 0, this.canvasWidth, 0);
+                    gradient.addColorStop(0, "#e0c97b");
+                    gradient.addColorStop(1, "#c68a27");
+                    break;
+                case "forest":
+                    gradient = this.context.createLinearGradient(0, 0, 0, this.canvasHeight);
+                    gradient.addColorStop(0, "#004d00");
+                    gradient.addColorStop(1, "#66ff66");
+                    break;
+                case "ocean":
+                    gradient = this.context.createLinearGradient(0, 0, this.canvasWidth, this.canvasHeight);
+                    gradient.addColorStop(0, "#001f4d");
+                    gradient.addColorStop(1, "#66ccff");
+                    break;
+                case "rainbow":
+                    gradient = this.context.createLinearGradient(0, 0, this.canvasWidth, 0);
+                    gradient.addColorStop(0, "#ff0000"); // Red.
+                    gradient.addColorStop(0.17, "#ff7f00"); // Orange.
+                    gradient.addColorStop(0.34, "#ffff00"); // Yellow.
+                    gradient.addColorStop(0.51, "#00ff00"); // Green.
+                    gradient.addColorStop(0.68, "#0000ff"); // Blue.
+                    gradient.addColorStop(0.85, "#4b0082"); // Indigo.
+                    gradient.addColorStop(1, "#8b00ff"); // Violet.
+                    break;
                 default:
-                    gradient = "#ff0000";
+                    gradient = "#ffffff";
                     break;
             }
 
