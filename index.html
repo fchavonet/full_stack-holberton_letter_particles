@@ -5,23 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Holberton letter particles</title>
+    <title>Holberton Letter Particles</title>
 
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./behaviors.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
 
-    <!-- Bootstrap icon -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Script -->
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
     <!-- Text input -->
     <input id="text-input" type="text" value="Holberton School">
-
-    <!-- Github link -->
-    <a id="github-social-link" href="https://github.com/fchavonet/web-holberton_letter_particles" target="_blank">
-        <img src="./assets/images/social_icon-github.webp" alt="GitHub social icon">
-    </a>
 
     <!-- Settings menu-->
     <div id="settings-menu">
@@ -141,8 +139,20 @@
         </datalist>
     </div>
 
+    <!-- Github link -->
+    <a id="github-social-link" href="https://github.com/fchavonet/web-holberton_letter_particles" target="_blank">
+        <img src="./assets/images/social_icon-github.webp" alt="GitHub social icon">
+    </a>
+
     <!-- Main canvas -->
     <canvas id="main-canvas"></canvas>
+
+    <!-- Responsive Warning -->
+    <div id="responsive-warning">
+        <i class="bi bi-exclamation-triangle-fill warning-icons"></i>
+        <p>This web application is not optimized for mobile.</p>
+        <p>Please visit it on a desktop computer for the best experience.</p>
+    </div>
 </body>
 
 </html>

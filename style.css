@@ -9,12 +9,15 @@
 
 /* VARIABLES */
 :root {
-    --background-color: rgb(1, 5, 10);
-    --box-background-color: rgb(20, 30, 35, 0.5);
-    --box-border-color: rgb(60, 70, 75);
-    --range-background-color: rgb(60, 70, 75);
-    --range-slider-thumb-color: rgb(125, 175, 200);
     --primary-color: rgb(250, 250, 115);
+
+    --box-border-color: rgb(60, 70, 75);
+    --box-background-color: rgb(20, 30, 35, 0.5);
+
+    --range-slider-thumb-color: rgb(125, 175, 200);
+    --range-background-color: rgb(60, 70, 75);
+
+    --background-color: rgb(1, 5, 10);
 }
 
 /* GENERAL */
@@ -39,6 +42,35 @@ canvas {
     z-index: -1;
 }
 
+/* RESPONSIVE WARNING */
+#responsive-warning {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    background-color: black;
+    z-index: 9999;
+}
+
+.warning-icons {
+    font-size: 2rem;
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    #responsive-warning.show {
+        display: flex;
+    }
+}
+
 /* TEXT INPUT */
 input[type="text"] {
     position: absolute;
@@ -55,24 +87,6 @@ input[type="text"] {
     background-color: var(--box-background-color);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-}
-
-/* GITHUB SOCIAL LINK */
-#github-social-link {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    transition: transform 0.2s ease-in-out;
-}
-
-#github-social-link:hover {
-    transform: scale(1.2);
-}
-
-#github-social-link img {
-    width: 2rem;
-    height: 2rem;
-    display: block;
 }
 
 /* SETTINGS MENU */
@@ -152,4 +166,22 @@ input[type="text"] {
     border-radius: 0.2rem;
     background-color: var(--range-slider-thumb-color);
     cursor: pointer;
+}
+
+/* GITHUB SOCIAL LINK */
+#github-social-link {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+#github-social-link:hover {
+    transform: scale(1.2);
+}
+
+#github-social-link img {
+    width: 2rem;
+    height: 2rem;
+    display: block;
 }
