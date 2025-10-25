@@ -1,35 +1,14 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-web.png" alt="Web logo">
-
 # Holberton Letter Particles
 
-## 🔖 Table of contents
+## Description
 
-<details>
-    <summary>
-        CLICK TO ENLARGE 😇
-    </summary>
-    📄 <a href="#description">Description</a>
-    <br>
-    🎓 <a href="#objectives">Objectives</a>
-    <br>
-    🔨 <a href="#tech-stack">Tech stack</a>
-    <br>
-    📂 <a href="#files-description">Files description</a>
-    <br>
-    💻 <a href="#installation_and_how_to_use">Installation and how to use</a>
-    <br>
-    🔧 <a href="#whats-next">What's next?</a>
-    <br>
-    ♥️ <a href="#thanks">Thanks</a>
-    <br>
-    👷 <a href="#authors">Authors</a>
-</details>
+This project originates from a tutorial by [Frank Dvorak](https://www.youtube.com/@Frankslaboratory/featured), which introduced the foundational concepts behind text-based particle animation.
 
-## 📄 <span id="description">Description</span>
+Building on this foundation, I expanded the project with interactive customization features and a user-friendly settings menu.
 
-This project originates from a tutorial by [Frank Dvorak](https://www.youtube.com/@Frankslaboratory/featured), which provided the foundational concepts for the particle animation effect on text. Building on this foundation, I modified and expanded the project to include interactive customization and a user-friendly settings menu. By leveraging HTML5 Canvas and JavaScript, this project demonstrates the potential of web animations in an engaging and customizable way.
+By leveraging HTML5 Canvas and JavaScript, this project demonstrates the potential of web animations in an engaging and customizable way.
 
-## 🎓 <span id="objectives">Objectives</span>
+## Objectives
 
 - Enhance my skills in JavaScript and HTML5 Canvas through creative coding.
 - Develop a visually captivating animation that reacts to user input.
@@ -38,19 +17,14 @@ This project originates from a tutorial by [Frank Dvorak](https://www.youtube.co
 - Implement real-time customization features via a settings menu.
 - Deliver a polished and engaging user interface.
 
-## 🔨 <span id="tech-stack">Tech stack</span>
+## Tech Stack
 
-<p align="left">
-    <img src="https://img.shields.io/badge/HTML5-e34f26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML5 badge">
-    <img src="https://img.shields.io/badge/CSS3-1572b6?logo=css3&logoColor=white&style=for-the-badge" alt="CSS3 badge">
-    <img src="https://img.shields.io/badge/JAVASCRIPT-f7df1e?logo=javascript&logoColor=black&style=for-the-badge" alt="JavaScript badge">
-    <img src="https://img.shields.io/badge/GIT-f05032?logo=git&logoColor=white&style=for-the-badge" alt="Git badge">
-    <img src="https://img.shields.io/badge/GITHUB-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub badge">
-    <img src="https://img.shields.io/badge/MARKDOWN-000000?logo=markdown&logoColor=white&style=for-the-badge" alt="Markdown badge">
-    <img src="https://img.shields.io/badge/VS CODE-007acc?logo=data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjZmZmZmZmIiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9Ii0wLjUgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KDTxnIGlkPSJTVkdSZXBvX2JnQ2FycmllciIgc3Ryb2tlLXdpZHRoPSIwIi8+Cg08ZyBpZD0iU1ZHUmVwb190cmFjZXJDYXJyaWVyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KDTxnIGlkPSJTVkdSZXBvX2ljb25DYXJyaWVyIj4KDTxwYXRoIGQ9Im0xNy44NTggMjMuOTk4LTkuNzcxLTkuNDg0LTUuODY2IDQuNDY1LTIuMjIxLTEuMTE1di0xMS43MTlsMi4yMzQtMS4xMjEgNS44NyA0LjQ2OSA5Ljc0Ny05LjQ5MyA1LjU4NyAyLjIzOXYxOS41MzFsLTUuNTc5IDIuMjN6bS0uNTYzLTE2LjE4Ni01LjU3NyA0LjE3MyA1LjU4IDQuMjAyem0tMTQuNTA3IDEuNjg1djUuMDE2bDIuNzg3LTIuNTI1eiIvPgoNPC9nPgoNPC9zdmc+&logoColor=white&style=for-the-badge" alt="VS Code badge">
-</p>
+![HTML5 badge](https://img.shields.io/badge/HTML5-e34f26?logo=html5&logoColor=white&style=for-the-badge)
+![CSS3 badge](https://img.shields.io/badge/CSS3-1572b6?logo=css&logoColor=white&style=for-the-badge)
+![JavaScript badge](https://img.shields.io/badge/JAVASCRIPT-f7df1e?logo=javascript&logoColor=black&style=for-the-badge)
 
-## 📂 <span id="files-description">File description</span>
+## File Description
+
 
 | **FILE**     | **DESCRIPTION**                                             |
 | :----------: | ----------------------------------------------------------- |
@@ -60,9 +34,9 @@ This project originates from a tutorial by [Frank Dvorak](https://www.youtube.co
 | `script.js`  | Main JavaScript file managing canvas rendering and effects. |
 | `README.md`  | The README file you are currently reading 😉.               |
 
-## 💻 <span id="installation_and_how_to_use">Installation and how to use</span>
+## Installation & Usage
 
-**Installation:**
+### Installation
 
 1. Clone this repository:
     - Open your preferred Terminal.
@@ -70,42 +44,41 @@ This project originates from a tutorial by [Frank Dvorak](https://www.youtube.co
     - Run the following command:
 
 ```
-git clone https://github.com/fchavonet/web-holberton_letter_particles.git
+git clone https://github.com/fchavonet/full_stack-holberton_letter_particles.git
 ```
 
-2. Open the repository you've just cloned.
+2. Open the cloned repository.
 
-**How to use:**
+### Usage
 
 1. Open the `index.html` file in your web browser.
 
-2. Use the input field at the top of the page to change the displayed text.
+2. Use the top input field to change the displayed text.
 
-3. Customize the particle effects using the settings menu:
+3. Customize the particles using the settings menu:
 
     - Choose a color or gradient for the particle effect.
     - Adjust font size, particle size, gap size, and mouse interaction radius.
 
 4. Interact with the canvas using your mouse to see the particles react dynamically.
 
-You can also test the web application online by clicking [here](https://fchavonet.github.io/web-holberton_letter_particles/).
+You can also test the project online by clicking [here](https://fchavonet.github.io/full_stack-holberton_letter_particles/).
 
-<p align="center">
-    <img src="./assets/images/screenshots.webp">
-</p>
+![Screenshot 001](./assets/images/screenshots/desktop_page_screenshot-001.webp)
+![Screenshot 002](./assets/images/screenshots/desktop_page_screenshot-002.webp)
 
-## 🔧 <span id="whats-next">What's next ?</span>
+## What's Next?
 
 - Add more predefined color themes and gradients.
 - Improve responsiveness to ensure the effect works seamlessly on mobile devices.
-- Experiment with and propose additional visual effects to diversify animations.
+- Experiment with new visual effects to diversify animations.
 - Optimize performance.
 
-## ♥️ <span id="thanks">Thanks</span>
+## Thanks
 
 - Thank you to [Frank Dvorak](https://www.youtube.com/@Frankslaboratory/featured) for his tutorials on canvas and particle manipulations.
 
-## 👷 <span id="authors">Authors</span>
+## Author(s)
 
 **Fabien CHAVONET**
 - GitHub: [@fchavonet](https://github.com/fchavonet)
